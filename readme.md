@@ -11,7 +11,7 @@ npm install convenience-image -S
 
 全局应用组件
 ``` javascript
-var ConvenienceImage = require('convenience-image')
+import ConvenienceImage from 'convenience-image'
 Vue.use(ConvenienceImage)
 ```
 

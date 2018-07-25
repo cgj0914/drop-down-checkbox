@@ -6,7 +6,7 @@
   "files": [
     "src/lib"
   ],
-  "repository":{
+  "repository": {
     "type": "git",
     "url": "https://github.com/kuangch/convenience-image"
   },

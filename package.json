@@ -1,7 +1,25 @@
 {
   "name": "convenience-image",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "main": "src/lib/index.js",
+  "files": [
+    "src/lib"
+  ],
+  "repository":{
+    "type": "git",
+    "url": "https://github.com/kuangch/convenience-image"
+  },
+  "keywords": [
+    "vue",
+    "image",
+    "图片加载出错",
+    "默认图片",
+    "load error",
+    "default image"
+  ],
+  "author": "kuangch",
+  "license": "ISC",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",

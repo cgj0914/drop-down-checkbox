@@ -1,57 +1,116 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
-    <p>
-      For guide and recipes on how to configure / customize this project,<br>
-      check out the
-      <a href="https://cli.vuejs.org" target="_blank">vue-cli documentation</a>.
-    </p>
-    <h3>Installed CLI Plugins</h3>
-    <ul>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-babel" target="_blank">babel</a></li>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-eslint" target="_blank">eslint</a></li>
-    </ul>
-    <h3>Essential Links</h3>
-    <ul>
-      <li><a href="https://vuejs.org" target="_blank">Core Docs</a></li>
-      <li><a href="https://forum.vuejs.org" target="_blank">Forum</a></li>
-      <li><a href="https://chat.vuejs.org" target="_blank">Community Chat</a></li>
-      <li><a href="https://twitter.com/vuejs" target="_blank">Twitter</a></li>
-    </ul>
-    <h3>Ecosystem</h3>
-    <ul>
-      <li><a href="https://router.vuejs.org" target="_blank">vue-router</a></li>
-      <li><a href="https://vuex.vuejs.org" target="_blank">vuex</a></li>
-      <li><a href="https://github.com/vuejs/vue-devtools#vue-devtools" target="_blank">vue-devtools</a></li>
-      <li><a href="https://vue-loader.vuejs.org" target="_blank">vue-loader</a></li>
-      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank">awesome-vue</a></li>
-    </ul>
-  </div>
+
+    <div>
+        <div class="item">
+            <div class="container">
+                <convenience-image src-nor="http://img15.3lian.com/2015/f2/8/d/96.jpg2" :src-err="defaultImg"/>
+            </div>
+            图片不存在
+        </div>
+
+        <div class="item">
+            <div class="container">
+                <convenience-image src-nor="http://img15.3lian.com/2015/f1/173/d/40.jpg" :src-err="defaultImg"/>
+            </div>
+            w&lth,居中
+        </div>
+
+        <div class="item">
+            <div class="container">
+                <convenience-image src-nor="http://img15.3lian.com/2015/f2/8/d/96.jpg" :src-err="defaultImg"/>
+            </div>
+            w>h,居中
+        </div>
+
+        <br>
+        <div class="item">
+            <div class="container">
+                <convenience-image alignment="left" src-nor="http://img15.3lian.com/2015/f2/8/d/96.jpg2" :src-err="defaultImg"/>
+            </div>
+            图片不存在
+        </div>
+        <div class="item">
+            <div class="container">
+                <convenience-image alignment="left" src-nor="http://img15.3lian.com/2015/f1/173/d/40.jpg" :src-err="defaultImg"/>
+            </div>
+            w&lth,左对齐
+        </div>
+        <div class="item">
+            <div class="container">
+                <convenience-image alignment="left" src-nor="http://img15.3lian.com/2015/f2/8/d/96.jpg" :src-err="defaultImg"/>
+            </div>
+            w>h,左对齐
+        </div>
+
+        <br>
+        <div class="item">
+            <div class="container">
+                <convenience-image alignment="top" src-nor="http://img15.3lian.com/2015/f2/8/d/96.jpg2" :src-err="defaultImg"/>
+            </div>
+            图片不存在
+        </div>
+        <div class="item">
+            <div class="container">
+                <convenience-image alignment="top" src-nor="http://img15.3lian.com/2015/f1/173/d/40.jpg" :src-err="defaultImg"/>
+            </div>
+            w&lth,上对齐
+        </div>
+        <div class="item">
+            <div class="container">
+                <convenience-image alignment="top" src-nor="http://img15.3lian.com/2015/f2/8/d/96.jpg" :src-err="defaultImg"/>
+            </div>
+            w>h,上对齐
+        </div>
+
+        <br>
+        <div class="item">
+            <div class="container">
+                <convenience-image alignment="top-left" src-nor="http://img15.3lian.com/2015/f2/8/d/96.jpg2" :src-err="defaultImg"/>
+            </div>
+            图片不存在
+        </div>
+        <div class="item">
+            <div class="container">
+                <convenience-image alignment="top-left" src-nor="http://img15.3lian.com/2015/f1/173/d/40.jpg" :src-err="defaultImg"/>
+            </div>
+            w&lth,上对齐左对齐
+        </div>
+        <div class="item">
+            <div class="container">
+                <convenience-image alignment="top-left" src-nor="http://img15.3lian.com/2015/f2/8/d/96.jpg" :src-err="defaultImg"/>
+            </div>
+            w>h,上对齐左对齐
+        </div>
+
+    </div>
+
 </template>
 
 <script>
-export default {
-  name: 'HelloWorld',
-  props: {
-    msg: String
-  }
-}
+    export default {
+        name: 'HelloWorld',
+        props: {
+            msg: String
+        },
+        data() {
+            return {
+                defaultImg: require('../assets/defaultImg.png')
+            }
+        }
+    }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h3 {
-  margin: 40px 0 0;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
+    .item {
+        padding-left: 10px;
+        padding-right: 10px;
+        display: inline-block;
+    }
+
+    .container {
+        background: #ccc;
+        width: 150px;
+        height: 150px;
+    }
 </style>

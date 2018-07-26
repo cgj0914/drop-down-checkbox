@@ -30,4 +30,4 @@ srcErr: 加载失败后显示的默认图片
 ```
 
 ## 效果
-![image](https://github.com/kuangch/convenience-image/blob/master/screen.jpg)
+![image](https://raw.githubusercontent.com/kuangch/convenience-image/master/screen.jpg)

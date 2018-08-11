@@ -14,6 +14,7 @@
     "vue",
     "image",
     "图片加载出错",
+    "自适应",
     "默认图片",
     "load error",
     "default image"
@@ -32,6 +33,7 @@
     "@vue/cli-plugin-babel": "^3.0.0-rc.5",
     "@vue/cli-plugin-eslint": "^3.0.0-rc.5",
     "@vue/cli-service": "^3.0.0-rc.5",
+    "url-loader": "^1.0.1",
     "vue-template-compiler": "^2.5.16"
   },
   "eslintConfig": {

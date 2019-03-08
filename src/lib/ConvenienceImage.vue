@@ -24,10 +24,6 @@
                 _this.imageSrc = _this.srcErr
             }
 
-            // 初始居中
-            _this.$refs.img.style.left = '0'
-            _this.$refs.img.style.top = '0'
-
             switch (_this.alignment){
                 case 'top':
                     //上对齐
@@ -51,6 +47,12 @@
                 case 'left-top':
                     // 上对齐，左对齐
                     _this.$refs.img.style.margin = '0 0'
+                    break
+
+                case 'max-contain':
+                    // 最大包含
+                    _this.$refs.img.style.cssText += 'width: 100% !important; height: 100% !important; object-fit: contain'
+
                     break
                 default:
                     // 默认上下左右居中
@@ -89,6 +91,8 @@
         max-width: 100% !important;
         right: 0;
         bottom: 0;
+        top: 0;
+        left: 0;
     }
 
 </style>

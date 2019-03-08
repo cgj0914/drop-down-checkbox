@@ -2,6 +2,14 @@
 
     <div>
         <div class="item">
+            <div style="width: 30vw; height: 40vh; background: #ccc">
+                <convenience-image alignment="max-contain" src-nor="http://img15.3lian.com/2015/f2/8/d/96.jpg2" :src-err="defaultImg"/>
+            </div>
+            等比缩放至最大面积
+        </div>
+
+        <br>
+        <div class="item">
             <div class="container">
                 <convenience-image src-nor="http://img15.3lian.com/2015/f2/8/d/96.jpg2" :src-err="defaultImg"/>
             </div>
@@ -113,4 +121,5 @@
         width: 150px;
         height: 150px;
     }
+
 </style>

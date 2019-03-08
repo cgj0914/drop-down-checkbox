@@ -24,7 +24,7 @@ Vue.use(ConvenienceImage)
 
 组件属性
 ```
-alignment: 图片的对齐方式(left/right/top/bottom/left-top)
+alignment: 图片的对齐方式(left/right/top/bottom/left-top/max-contain)
 srcNor: 要加载的图片
 srcErr: 加载失败后显示的默认图片
 ```

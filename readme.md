@@ -1,4 +1,4 @@
-# convenience-image
+# drop-down-checkbox
 
 基于vue的下拉多选框组件
 
@@ -6,7 +6,7 @@
 
 安装
 ``` bash
-npm install convenience-image -S
+npm install drop-down-checkbox -S
 ```
 
 全局应用组件

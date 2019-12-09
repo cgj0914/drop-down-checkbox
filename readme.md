@@ -11,14 +11,14 @@ npm install drop-down-checkbox -S
 
 全局应用组件
 ``` javascript
-import ConvenienceImage from 'convenience-image'
-Vue.use(ConvenienceImage)
+import DropDownCheckbox from 'drop-down-checkbox'
+Vue.use(DropDownCheckbox)
 ```
 
 使用组件
 ``` html
- <div class="container">
-    <convenience-image alignment="top-left" src-nor="http://img15.3lian.com/2015/f1/173/d/40.jpg" :src-err="defaultImg"/>
+ <div>
+      <drop-down-checkbox :checkList='checkList' :existingData='existingData' @returnData='getData'/>
  </div>
 ```
 

@@ -24,9 +24,9 @@ Vue.use(ConvenienceImage)
 
 组件属性
 ```
-alignment: 图片的对齐方式(left/right/top/bottom/left-top/max-contain)
-srcNor: 要加载的图片
-srcErr: 加载失败后显示的默认图片
+checkList: 下拉列表的固有数据
+existingData: 已经被选中的数据
+returnData: 选择结束后返回数据
 ```
 
 ## 效果

@@ -4,13 +4,10 @@
  *     date : 2018/7/20
  * ======================================== */
 
-import ConvenienceImage from './ConvenienceImage.vue'
+import DropDownCheckbox from './DropDownCheckbox.vue'
 
-ConvenienceImage.install = function (Vue) {
-    Vue.component(ConvenienceImage.name, ConvenienceImage)
+DropDownCheckbox.install = function (Vue) {
+    Vue.component(DropDownCheckbox.name, DropDownCheckbox)
 }
 
-// if (typeof window !== 'undefined' && window.Vue) {
-//     window.Vue.use(ConvenienceImage);
-// }
-export default ConvenienceImage
+export default DropDownCheckbox

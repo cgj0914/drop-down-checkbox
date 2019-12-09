@@ -1,6 +1,6 @@
-# convenience-image
+# drop-down-checkbox
 
-基于vue的图片加载组件
+基于vue的下拉多选框组件
 
 ## 使用
 

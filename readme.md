@@ -26,7 +26,6 @@ Vue.use(DropDownCheckbox)
 ```
 checkList: 下拉列表的固有数据
 existingData: 已经被选中的数据
-returnData: 选择结束后返回数据
 ```
 
 组件方法 

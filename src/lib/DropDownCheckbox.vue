@@ -11,7 +11,7 @@
             <i class="el-icon-arrow-up" v-if="clickUp"></i>
         </div>
         <div v-if='listType' class="selctDown" style="">
-            <el-checkbox-group style="width:99.5%;" v-model="checkedCities" @change="handleCheckedCitiesChange">
+            <el-checkbox-group style="width:99.5%;" v-model="checkedCities" @change.stop="handleCheckedCitiesChange">
                 <el-checkbox v-for="(item,index) in options" :label="item" :key="index">{{item}}</el-checkbox>
             </el-checkbox-group>
         </div>
